@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>About Us</title>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1e1e2f, #2a2a48);
+            color: #f8f9fa;
+        }
+
+        .main_menu {
+            background: linear-gradient(135deg, #212332, #2a2a48);
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            color: #17c0eb !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #17c0eb !important;
+            margin-right: 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #00ffa2 !important;
+            transform: scale(1.1);
+        }
+
+        .main_header {
+            background: linear-gradient(135deg, #00a8ff, #005eff);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .right_content h1 {
+            font-size: 3rem;
+            color: #00ffa2;
+        }
+
+        .right_content h1 span {
+            color: #fbc531;
+        }
+
+        .btn-custom {
+            background: linear-gradient(135deg, #00a8ff, #9c88ff);
+            color: #fff;
+            border: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-custom:hover {
+            background: linear-gradient(135deg, #9c88ff, #00ffa2);
+            color: #000;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Footer Styling */
+        .floating-footer {
+            background: linear-gradient(135deg, #212332, #2a2a48);
+            color: #f8f9fa;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .floating-footer span {
+            color: #e84118;
+        }
+
+        .floating-footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Carousel Styling */
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            filter: brightness(80%);
+            transition: filter 0.3s;
+        }
+
+        .carousel-inner img:hover {
+            filter: brightness(100%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    {{>navbar}}
+
+    <!-- Main Header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto content-box">
+                <div class="row">
+                    <!-- Text Content -->
+                    <div class="col-md-6 col-12 right_content">
+                        <h1>{{errorMsg}}</h1>
+                        <p>We couldn’t find the page you’re looking for. Let’s get you back to safety!</p>
+                        <a href="/" class="btn btn-custom">Go Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="floating-footer">
+        <div class="container">
+            <p class="mb-0">Created with <span>&hearts;</span> by Anubhav</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

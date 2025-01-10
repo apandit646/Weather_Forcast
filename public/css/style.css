@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #6c757d;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #00d9ff;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #00d9ff;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.main_header {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.left_content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.left_content span {
+    color: #00d9ff;
+}
+
+.btn-custom {
+    background: #00d9ff;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.btn-custom:hover {
+    background: #ffffff;
+    color: #000;
+}
+
+.carousel-inner img {
+    border: 5px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.floating-footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #00d9ff;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
